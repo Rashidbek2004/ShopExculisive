@@ -1,0 +1,53 @@
+.container .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.container .images .image {
+  width: 50%;
+}
+.container .images .image img {
+  width: 96%;
+}
+
+.container .images .image .mainImg {
+  width: 100%;
+}
+.container .images .image .mainImg img {
+  width: 100%;
+}
+
+.container .images .photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.container .images .photos .photo {
+  width: 50%;
+}
+
+.container .images .photos .photo img {
+  width: 100%;
+}
+
+.container .arrivalBtn {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #db4444;
+  font-size: 22px;
+}
+.container .arrivalBtn button {
+  padding: 22px 10px;
+  background-color: #db4444;
+  border: none;
+}
+
+.new h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

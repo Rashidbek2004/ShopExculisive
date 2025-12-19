@@ -1,0 +1,22 @@
+.btns22{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns22 button{
+    padding: 10px 42px;
+    background-color: #DB4444;
+    color: white;
+}
+.btns22 .OneBtn{
+    border: none;
+}
+.btns22 .TwoBtn{
+    background: transparent;
+    color: red;
+    border: none;
+}
+
+.signUp .container .info form{
+    margin-bottom: 50px;
+}

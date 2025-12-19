@@ -1,0 +1,23 @@
+.container .deliver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.container .deliver .free {
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+.container .deliver .free img {
+  margin-bottom: 5px;
+}
+
+.container .deliver .free h4 {
+  margin-bottom: 4px;
+}
+
+.container .deliver .free h6 {
+  margin-bottom: 6px;
+}

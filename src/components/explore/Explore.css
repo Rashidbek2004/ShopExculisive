@@ -1,0 +1,102 @@
+.explore .container {
+  margin-bottom: 100px;
+}
+.explore .container .rows {
+  margin-bottom: 50px;
+}
+.explore .container button {
+  padding: 18px 8px;
+  margin-right: 8px;
+  background-color: #db4444;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+.explore .container span {
+  color: #db4444;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.exploreBoxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exploreBox {
+  width: 22%;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 0.1px solid rgba(128, 128, 128, 0.37);
+  background-color: rgba(128, 128, 128, 0.144);
+  border-radius: 6px;
+  border-top-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.212);
+  animation: 3.5s ease-in-out infinite linear;
+  animation-name: animat;
+  
+}
+.exploreBox:hover{
+  animation: none;
+}
+
+@keyframes animat {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.exploreBox img {
+  width: 70%;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.exploreBox h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.exploreBox .spans1 .exploreIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 8px;
+}
+
+.exploreBox .spans1 .exploreIcon .span1 h4 {
+  color: #db4444;
+  margin-top: 5px;
+}
+
+.exploreBox .spans1 .exploreIcon .icon1 {
+  color: #ffad33;
+}
+
+.exploreBox .spans1 .exploreIcon .price {
+  color: gray;
+  margin-top: 5px;
+}
+.exploreBox .spans1 .exploreIcon .icon {
+  color: gray;
+}
+.centerBtn button {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+}
+.btnCenter {
+  width: 17%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #db4444;
+  color: white;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 4px;
+}

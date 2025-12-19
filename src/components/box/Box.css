@@ -1,0 +1,45 @@
+.cardBox .buttons {
+  position: relative;
+}
+
+.bten {
+  position: relative;
+  z-index: 999;
+  height: 20px;
+}
+
+.bten button {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  margin-top: 24px;
+}
+
+
+.likes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  display: block;
+  position: absolute;
+}
+.likes .like {
+  position: relative;
+  top: 18px;
+  right: -228px;
+  font-size: 22px;
+}
+
+.cardBox .buttons button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #db4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 8px;
+}
