@@ -1,0 +1,161 @@
+.container .proInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.container .proInfo .grey {
+  color: gray;
+}
+.detailInfo .detailImgs {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.detailInfo .detailImgs .detailImg {
+  width: 35%;
+  height: 565px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.detailInfo .detailImgs .detailImg img {
+  width: 100%;
+}
+.detailInfo .detailImgs .detailImg1 {
+  width: 100%;
+  height: 558px;
+  text-align: center;
+  margin-top: 75px;
+}
+.detailInfo .detailImgs .detailImg1 img {
+  width: 100%;
+}
+.allGemepad {
+  width: 78%;
+  margin: 0 auto;
+}
+.productIcons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0px;
+}
+.productIcons .productIcon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #ffad33;
+}
+.productIcons .productIcon .grey {
+  color: gray;
+}
+.detailInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.productInfo {
+  width: 56%;
+  margin-top: 40px;
+}
+.rewiew {
+  color: gray;
+  font-size: 20px;
+}
+.stok {
+  color: #00ff66;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.detailSpan {
+  padding: 2px 0px;
+}
+
+.detailLorem {
+  padding: 10px 0px;
+  font-size: 17px;
+}
+
+.detailColors {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+}
+.detailColors .detailColor {
+  background-color: red;
+  color: red;
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+.detailSize {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.detailSize .detailBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.detailSize .detailBtn button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: transparent;
+  border: 2px solid gray;
+}
+.detailButtons {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailButtons .detailButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid gray;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.detailButtons .detailButton button {
+  padding: 4px 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.61);
+  position: relative;
+}
+.byBtns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.byBtns .byBtn button {
+  padding: 8px 50px;
+  background-color: #db4444;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.byBtns .BtnLike button {
+  padding: 7px 8px;
+  background: transparent;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+}
+.deatilPhoto {
+  width: 78%;
+  margin-top: 30px;
+}
+.deatilPhoto img {
+  width: 100%;
+}

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiUser } from "react-icons/fi";
 import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   return (
@@ -44,6 +44,12 @@ const Navbar = () => {
               <li>
                 <NavLink to={"/Login"}>Login</NavLink>
               </li>
+               <li>
+                <NavLink to={"/account"}>Account</NavLink>
+              </li>
+               <li>
+                <NavLink to={"/contact"}>contact</NavLink>
+              </li>
             </ul>
             <form action="">
               <input type="text" placeholder="What are you looking for?" />
@@ -55,6 +61,9 @@ const Navbar = () => {
               </div>
               <div className="icon">
                 <FaShoppingCart />
+              </div>
+              <div className="icon">
+                <FiUser />
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { FaGoogle } from "react-icons/fa6";
 import "./SignUp.css";
+import About from "../about/About";
 const SignUp = () => {
   return (
     <div className="signUp">
@@ -22,13 +23,14 @@ const SignUp = () => {
             <div className="buttons">
               <div className="btn">
                 <button className="google">
-                  <FaGoogle className="googleIcon"/>
+                  <FaGoogle className="googleIcon" />
                   <h4>Sign up with Google</h4>
                 </button>
               </div>
             </div>
           </div>
         </div>
+        <About />
       </div>
     </div>
   );

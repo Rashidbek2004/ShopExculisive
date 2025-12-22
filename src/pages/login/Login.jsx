@@ -1,6 +1,7 @@
 import { FaGoogle } from "react-icons/fa6";
 import "./Login.css";
-const Login = () => {
+import ProductDetail from "../prouductDetail/ProductDetail";
+const Login = ({count, setCount}) => {
   return (
     <>
       <div className="signUp">
@@ -10,8 +11,8 @@ const Login = () => {
               <img src="/imgs/Side Image.svg" alt="" />
             </div>
             <div className="info">
-              <h1>Log in to Exclusive</h1>
-              <h4>Enter your details below</h4>
+              <h2>Log in to Exclusive</h2>
+              <h5>Enter your details below</h5>
               <form action="">
                 <input type="text" placeholder="Email or Phone Number" />
                 <input type="text" placeholder="Password" />
@@ -24,6 +25,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <ProductDetail count={count} setCount={setCount}/>
     </>
   );
 };

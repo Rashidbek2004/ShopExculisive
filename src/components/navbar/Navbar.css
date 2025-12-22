@@ -13,7 +13,7 @@
   justify-content: space-between;
   padding: 20px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .navbar .logo {
@@ -42,7 +42,7 @@
 }
 
 .navbar ul {
-  width: 25%;
+  width: 35%;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -77,7 +77,7 @@
 }
 
 .navbar form {
-  width: 37%;
+  width:20%;
   margin-right: 30px;
   border: 1px solid gray;
   display: flex;

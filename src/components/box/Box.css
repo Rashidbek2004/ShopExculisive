@@ -8,6 +8,7 @@
   height: 20px;
 }
 
+
 .bten button {
   width: 100%;
   position: absolute;
@@ -17,7 +18,6 @@
   color: white;
   margin-top: 24px;
 }
-
 
 .likes {
   display: flex;
@@ -29,7 +29,7 @@
 .likes .like {
   position: relative;
   top: 18px;
-  right: -228px;
+  right: -188px;
   font-size: 22px;
 }
 

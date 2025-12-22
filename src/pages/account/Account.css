@@ -1,0 +1,147 @@
+.container .writesAccount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.container .writesAccount .writeAcc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.container .writesAccount .writeAcc .grey {
+  color: gray;
+}
+.container .writesAccount .writeAcc .redd {
+  color: #db4444;
+}
+
+.container .account {
+  width: 80%;
+  margin-bottom: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container .account .my {
+  width: 80%;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: gray;
+  font-size: 20px;
+}
+.container .account .my .red {
+  color: red;
+}
+.All .cardsAccount {
+  width: 100%;
+}
+.All .cardsAccount .account {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.container .orders {
+  width: 22%;
+  margin-bottom: 30px;
+  margin-left: 43px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container .orders .order {
+  width: 100%;
+  margin-left: 33px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: gray;
+  margin-bottom: 6px;
+}
+
+
+.All {
+  display: flex;
+  justify-content: space-between;
+}
+.BorderCard {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.212);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.BorderCard .profileCards .profileCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.BorderCard h1 {
+  color: #db4444;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.BorderCard .profileCards .profileCard .accountForm {
+  width: 70%;
+}
+.BorderCard .profileCards .profileCard .accountForm h3 {
+  margin-bottom: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.BorderCard .profileCards .profileCard .accountForm form {
+  padding: 4px 10px;
+  /* margin-left: 15px; */
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+.BorderCard .profileCards .profileCard .accountForm form input {
+  width: 100%;
+  margin-top: 4px;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.Password form {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.Password form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.AccButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.AccButtons .accBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.AccButtons .accBtn button {
+  padding: 8px 10px;
+}
+.AccButtons .accBtn .cancel {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+}
+
+.AccButtons .accBtn .save {
+  background-color: #db4444;
+  border: 1px solid #db4444;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+}

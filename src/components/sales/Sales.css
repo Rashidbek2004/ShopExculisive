@@ -55,18 +55,17 @@
   padding: 11px 12px;
   background-color: rgba(0, 0, 0, 0.349);
   border-radius: 900px;
-  color: white;
   border: none;
 }
 .cards .cardBox {
-  width: 23%;
+  width: 20%;
   padding: 10px;
   margin-bottom: 30px;
   border-radius: 4px;
   transition: 0.5s ease-in-out;
 }
 .cards .cardBox:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .cards .cardBox .image {
@@ -94,11 +93,13 @@
 .cards .cardBox .spans .line {
   text-decoration: line-through;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .cards .cardBox .spans .red {
   color: red;
   font-size: 20px;
+  margin-top: 10px;
 }
 .boxses {
   display: flex;

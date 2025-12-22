@@ -1,0 +1,36 @@
+.aboutWrite {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 0px;
+  padding-bottom: 10px;
+}
+
+.container .AboutCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container .AboutCard .aboutInfo {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.container .AboutCard .aboutInfo p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.container .AboutCard .aboutimage {
+  width: 45%;
+}
+.container .AboutCard .aboutimage img {
+  width: 100%;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 45px;
+}

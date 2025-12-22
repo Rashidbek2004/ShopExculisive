@@ -14,9 +14,15 @@ const HomePage = () => {
       <Hero />
       <Sales />
       <Categoy />
-      <Selling />
+      {/* <Selling /> */}
+      <Sales />
+
       <Music />
-      <Explore />
+      {/* <Explore /> */}
+      <Sales />
+
+      <Sales />
+
       <Arrival />
       <Deliver />
     </>

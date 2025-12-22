@@ -1,22 +1,33 @@
-.btns22{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btns22 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
-.btns22 button{
-    padding: 10px 42px;
-    background-color: #DB4444;
-    color: white;
+.btns22 button {
+  padding: 10px 42px;
+  background-color: #db4444;
+  color: white;
 }
-.btns22 .OneBtn{
-    border: none;
+.btns22 .OneBtn {
+  border: none;
 }
-.btns22 .TwoBtn{
-    background: transparent;
-    color: red;
-    border: none;
+.btns22 .TwoBtn {
+  background: transparent;
+  color: red;
+  border: none;
+}
+ .info h5{
+    color: gray;
+    font-size: 18px;
 }
 
-.signUp .container .info form{
-    margin-bottom: 50px;
+.signUp .container .info h2 {
+  font-size: 43px;
+  margin-bottom: 10px;
+}
+.signUp .container .info form {
+  width: 70%;
+  margin-bottom: 50px;
 }

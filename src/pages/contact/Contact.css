@@ -1,0 +1,97 @@
+.container .AllContact {
+  display: flex;
+  justify-content: space-between;
+}
+.container .contactForms {
+  width: 65%;
+  height: 430px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.089);
+}
+.container .contactForms form {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+.container .contactForms form input {
+  width: 30%;
+  padding: 10px 10px;
+  background-color: #f5f5f5;
+  outline: none;
+  color: darkblue;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact .ContactWrites {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+
+.container .contactInfo .contactBox {
+  margin-bottom: 30px;
+}
+
+.container .contactInfo {
+  width: 30%;
+  height: 420px;
+  margin-bottom: 45px;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.089);
+  text-align: justify;
+}
+.container .contactInfo .contactBox .ContactImgs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.four {
+  padding: 20px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.four h5 {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.contactForm {
+  height: 350px;
+}
+.contactForm textarea {
+  width: 87%;
+  height: 240px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  outline: none;
+  color: darkblue;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: justify;
+}
+.contactBtns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -60px;
+  right: 50px;
+}
+.contactBtns button {
+  padding: 10px 30px;
+  background-color: #db4444;
+  border: 1px solid #db4444;
+  color: white;
+  border-radius: 5px;
+}
