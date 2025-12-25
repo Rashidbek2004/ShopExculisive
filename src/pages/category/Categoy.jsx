@@ -1,6 +1,6 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import "./Category.css";
-const Categoy = () => {
+const Categoy = ({ categoryData }) => {
   return (
     <div className="category">
       <div className="container">
@@ -26,30 +26,16 @@ const Categoy = () => {
           </div>
         </div>
         <div className="categoryBox">
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>{" "}
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>{" "}
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>{" "}
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>{" "}
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>{" "}
-          <div className="BoxCard">
-            <img src="/imgs/Category-CellPhone.png" alt="" />
-            <h4>Phones</h4>
-          </div>
+          {categoryData?.map((item) => {
+            console.log();
+            
+            return (
+              <div className="BoxCard">
+                <img src={item?.image} alt="" />
+                <h4>{item?.title}</h4>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

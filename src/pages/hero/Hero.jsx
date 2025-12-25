@@ -9,39 +9,23 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ categoryData }) => {
   return (
     <div className="hero">
       <div className="container">
-        <div className="writes">
-          <div className="write">
-            <h2>Woman’s Fashion</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Men’s Fashion</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Electronics</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Home & Lifestyle</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Medicine</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Sports & Outdoor</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Baby’s & Toys</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>Groceries & Pets</h2>
-          </div>{" "}
-          <div className="write">
-            <h2>WHealth & Beauty</h2>
-          </div>
-        </div>
+        {categoryData?.map((item) => {
+          console.log(item);
+
+          return (
+            <div className="writes">
+              <img src={item?.image} alt="" />
+              <div className="write">
+                <h2>{item?.title}</h2>
+              </div>
+            </div>
+          );
+        })}
+
         <div className="images">
           <Swiper
             spaceBetween={30}

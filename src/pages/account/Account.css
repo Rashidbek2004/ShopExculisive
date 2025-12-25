@@ -12,6 +12,8 @@
 }
 .container .writesAccount .writeAcc .grey {
   color: gray;
+  text-decoration: none;
+  font-weight: 900;
 }
 .container .writesAccount .writeAcc .redd {
   color: #db4444;

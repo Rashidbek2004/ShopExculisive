@@ -1,11 +1,10 @@
 import { FaArrowLeftLong, FaArrowRightLong, FaStar } from "react-icons/fa6";
 import "./Sales.css";
 import Box from "../box/Box";
-const Sales = () => {
+const Sales = ({ productData }) => {
   return (
     <div>
       <div className="container">
-       
         <div className="rows">
           <div className="lent">
             <div className="row">
@@ -46,11 +45,11 @@ const Sales = () => {
             </button>
           </div>
         </div>
+
         <div className="cards">
-          <Box />
-          <Box />
-          <Box />
-          <Box />
+          {productData?.map((item) => {
+            return <Box item={item} />;
+          })}
         </div>
         <div className="button">
           <button>View All Products</button>

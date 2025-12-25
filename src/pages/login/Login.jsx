@@ -1,6 +1,7 @@
 import { FaGoogle } from "react-icons/fa6";
 import "./Login.css";
 import ProductDetail from "../prouductDetail/ProductDetail";
+import { Link } from "react-router-dom";
 const Login = ({count, setCount}) => {
   return (
     <>
@@ -18,14 +19,13 @@ const Login = ({count, setCount}) => {
                 <input type="text" placeholder="Password" />
               </form>
               <div className="btns22">
-                <button className="OneBtn">Log In</button>
+                <h5 className="OneBtn">Login</h5>
                 <button className="TwoBtn">Forget Password?</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <ProductDetail count={count} setCount={setCount}/>
     </>
   );
 };

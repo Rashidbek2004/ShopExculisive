@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact">
       <div className="ContactWrites">
         <div className="ContactWrite">
-          <h4>Home</h4>
+          <Link to={"/"} className="h4">Home</Link>
         </div>
         /
         <div className="ContactWrite">

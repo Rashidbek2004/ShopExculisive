@@ -3,20 +3,29 @@
 }
 
 .bten {
-  position: relative;
+  position: absolute;
   z-index: 999;
   height: 20px;
+  margin-bottom: -120px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: -100px;
+  flex-wrap: wrap;
+  display: block;
+  position: fixed;
+  right: -10px;
+  transition: 1s ease-in-out;
 }
-
-
 .bten button {
-  width: 100%;
-  position: absolute;
-  top: 200px;
+  width: 287px;
+  top: 220px;
   padding: 8px;
   background-color: black;
   color: white;
-  margin-top: 24px;
+  margin-top: 64px;
+  display: block;
+  position: relative;
+  right: 10px;
 }
 
 .likes {
@@ -24,22 +33,22 @@
   gap: 10px;
   flex-wrap: wrap;
   display: block;
-  position: absolute;
+  position: fixed;
+  right: 10px;
 }
 .likes .like {
-  position: relative;
-  top: 18px;
-  right: -188px;
+  top: 8px;
+  right: -218px;
   font-size: 22px;
 }
 
 .cardBox .buttons button {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 6px;
+  left: 6px;
   background-color: #db4444;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 3px 8px;
+  padding: 4px 10px;
 }

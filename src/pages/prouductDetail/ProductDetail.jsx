@@ -1,13 +1,14 @@
 import { FaRegHeart, FaStar } from "react-icons/fa6";
 import "./ProductDetail.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const ProductDetail = ({ count, setCount }) => {
   const [mainImg, setMainImg] = useState(" /imgs/Frame 894.png");
   return (
-    <>
+    <div div className="ProductDetail">
       <div className="container">
         <div className="proInfo">
-          <h3 className="grey">Account</h3>/<h3 className="grey">Gaming</h3>/
+          <Link to={"/account"} className="grey">Account</Link>/<h3 className="grey">Gaming</h3>/
           <h3>Havic HV G-92 Gamepad</h3>
         </div>
         <div className="allGemepad">
@@ -132,7 +133,7 @@ const ProductDetail = ({ count, setCount }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

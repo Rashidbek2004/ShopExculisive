@@ -1,10 +1,12 @@
 import { FaRegHeart, FaStar } from "react-icons/fa6";
 import "./Box.css";
 import { BiSolidHide } from "react-icons/bi";
-const Box = () => {
+import { Link } from "react-router-dom";
+const Box = ({ item }) => {
+
   return (
     <>
-      <div className="cardBox">
+      <Link to={"/PruductDetail"} className="cardBox">
         <div className="bten">
           <button>Add To Cart</button>
         </div>
@@ -20,15 +22,18 @@ const Box = () => {
           </div>
         </div>
         <div className="image">
-          <img src="/imgs/g92-2-500x500 1.png" alt="" />
+          <img
+            src={`https://ecommercev01.pythonanywhere.com/${item?.pictures[0]}`}
+            alt=""
+          />
         </div>
-        <h4>HAVIT HV-G92 Gamepad</h4>
+        <h4>{item?.category?.title}</h4>
         <div className="spans">
           <span className="red">
-            <span>$120</span>
+            <span>${item?.price}</span>
           </span>
           <span className="line">
-            <span>$160</span>
+            <span>${item?.discount_price}</span>
           </span>
         </div>
         <div className="boxses">
@@ -56,7 +61,7 @@ const Box = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

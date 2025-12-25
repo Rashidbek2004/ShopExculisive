@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Account.css";
 const Account = () => {
   return (
@@ -5,7 +6,7 @@ const Account = () => {
       <div className="container">
         <div className="writesAccount">
           <div className="writeAcc">
-            <h5 className="grey">Home/</h5>
+            <Link to={"/"} className="grey">Home/</Link>
             <h5>My Account</h5>
           </div>
           <div className="writeAcc">

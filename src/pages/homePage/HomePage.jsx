@@ -8,20 +8,18 @@ import Explore from "../../components/explore/Explore";
 import Arrival from "../arrival/Arrival";
 import Deliver from "../deliver/Deliver";
 
-const HomePage = () => {
+const HomePage = ({categoryData, productData}) => {
   return (
     <>
-      <Hero />
-      <Sales />
-      <Categoy />
-      {/* <Selling /> */}
-      <Sales />
+      <Hero categoryData={categoryData}/>
+      <Sales productData={productData}/>
+      <Categoy categoryData={categoryData}/>
+      {/* <Sales productData={productData}/> */}
 
       <Music />
-      {/* <Explore /> */}
-      <Sales />
+      {/* <Sales productData={productData}/> */}
 
-      <Sales />
+      {/* <Sales productData={productData}/> */}
 
       <Arrival />
       <Deliver />
