@@ -14,8 +14,6 @@ const Hero = ({ categoryData }) => {
     <div className="hero">
       <div className="container">
         {categoryData?.map((item) => {
-          console.log(item);
-
           return (
             <div className="writes">
               <img src={item?.image} alt="" />

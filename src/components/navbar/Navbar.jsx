@@ -6,12 +6,14 @@ import { RiShoppingBag4Fill } from "react-icons/ri";
 import { ImCancelCircle } from "react-icons/im";
 import { FaStar } from "react-icons/fa6";
 import { TbLogout2 } from "react-icons/tb";
-const Navbar = ({ modal, setModal }) => {
+import { GetToken } from "../../servises/token";
+const Navbar = ({ modal, setModal, counter, setcounter, token, setToken }) => {
   return (
     <>
       <div className="nav">
         <div className="rows">
           <div className="row"></div>
+
           <div className="row">
             <h6>
               Summer Sale For All Swim Suits And Free Express Delivery - OFF
@@ -51,26 +53,19 @@ const Navbar = ({ modal, setModal }) => {
               <li>
                 <NavLink to={"/SignUp"}>SignUp</NavLink>
               </li>
-
-              {/* <li>
-                <NavLink to={"/Login"}>Login</NavLink>
-              </li> */}
-              {/* <li>
-                <NavLink to={"/account"}>Account</NavLink>
-              </li> */}
             </ul>
             <form action="">
               <input type="text" placeholder="What are you looking for?" />
               <FiSearch />
             </form>
             <div className="icons">
-              <div className="icon">
+              <Link to={"/wishlist"} className="icon">
                 <FaRegHeart />
-              </div>
+              </Link>
 
-              <div>
-                <FaShoppingCart />
-              </div>
+              <Link to={"/CartDetail"}>
+                <FaShoppingCart className="cart1" />
+              </Link>
               {modal && (
                 <div className="modal">
                   <Link
@@ -116,9 +111,11 @@ const Navbar = ({ modal, setModal }) => {
                     className="modalIcons5"
                     onClick={() => {
                       setModal(false);
+                      setToken(null);
+                      localStorage.clear();
                     }}
                   >
-                    <div className="modalIcon">
+                    <div className="modalIcon" onClick={() => {}}>
                       <TbLogout2 />
                     </div>
                     <div className="modalLorem">
@@ -127,15 +124,18 @@ const Navbar = ({ modal, setModal }) => {
                   </Link>
                 </div>
               )}
-
-              <div
-                className="icon"
-                onClick={() => {
-                  setModal(!modal);
-                }}
-              >
-                <FiUser />
-              </div>
+              {token ? (
+                <div
+                  className="icon"
+                  onClick={() => {
+                    setModal(!modal);
+                  }}
+                >
+                  <FiUser />
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

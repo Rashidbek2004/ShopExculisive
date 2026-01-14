@@ -1,9 +1,10 @@
 .hero .container {
   width: 100%;
-  height: 500px;
+  height: 480px;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .hero .container .writes {
@@ -12,21 +13,18 @@
   align-items: center;
   gap: 4px;
   z-index: 9999;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 .hero .container .writes .write {
   margin-top: 0px;
 }
 
-/* .hero .container .writes .writeImg1{
-  width: 10px;
-} */
 .hero .container .writes img {
   width: 48px;
 }
 
 .hero .container .writes h2 {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.658);
   transition: 0.8s;
@@ -43,7 +41,7 @@
   border-radius: 5px;
   box-shadow: 1px 1px 20px black;
   right: -10px;
-  top: -360px;
+  top: -375px;
 }
 
 .swiper-slide {

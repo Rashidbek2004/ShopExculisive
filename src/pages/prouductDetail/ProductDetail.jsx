@@ -116,9 +116,9 @@ const ProductDetail = ({ count, setCount }) => {
                   </button>
                 </div>
                 <div className="byBtns">
-                  <div className="byBtn">
+                  <Link to={"/signUp"} className="byBtn">
                     <button>Buy Now</button>
-                  </div>
+                  </Link>
                   <div className="BtnLike">
                     <button>
                       <FaRegHeart />

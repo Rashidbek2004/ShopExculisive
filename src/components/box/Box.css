@@ -40,6 +40,18 @@
   top: 8px;
   right: -218px;
   font-size: 22px;
+  position: sticky;
+  z-index: 999;
+  cursor: grab;
+}
+
+.likee {
+  position: absolute;
+  z-index: 999;
+  cursor: grab;
+  top: 18px;
+  right: 8px;
+
 }
 
 .cardBox .buttons button {
@@ -51,4 +63,10 @@
   border: none;
   border-radius: 5px;
   padding: 4px 10px;
+}
+.hideEye{
+  position: absolute; 
+  top: 42px;
+  right: 8px;
+  font-size: 25px;
 }

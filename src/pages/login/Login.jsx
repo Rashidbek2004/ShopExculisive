@@ -1,8 +1,13 @@
 import { FaGoogle } from "react-icons/fa6";
 import "./Login.css";
 import ProductDetail from "../prouductDetail/ProductDetail";
-import { Link } from "react-router-dom";
-const Login = ({count, setCount}) => {
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { LoginFunction, Register } from "../../servises";
+const Login = ({ count, setCount, setToken }) => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
   return (
     <>
       <div className="signUp">
@@ -14,14 +19,38 @@ const Login = ({count, setCount}) => {
             <div className="info">
               <h2>Log in to Exclusive</h2>
               <h5>Enter your details below</h5>
-              <form action="">
-                <input type="text" placeholder="Email or Phone Number" />
-                <input type="text" placeholder="Password" />
+              <form
+                action=""
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  LoginFunction(email, password).then((info) => {
+                    if (info?.access) {
+                      localStorage.setItem("ShopToken", info?.access);
+                      navigate("/");
+                      setToken(info?.access)
+                    }
+                  });
+                }}
+              >
+                <input
+                  onInput={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  type="text" required
+                  placeholder="Email or Phone Number"
+                />
+                <input 
+                  onInput={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                  type="text" required
+                  placeholder="Password"
+                />
+                <div className="btns22">
+                  <button className="OneBtn">login</button>
+                  <button className="TwoBtn">Forget Password?</button>
+                </div>
               </form>
-              <div className="btns22">
-                <h5 className="OneBtn">Login</h5>
-                <button className="TwoBtn">Forget Password?</button>
-              </div>
             </div>
           </div>
         </div>

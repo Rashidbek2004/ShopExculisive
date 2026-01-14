@@ -3,22 +3,21 @@ import "./Box.css";
 import { BiSolidHide } from "react-icons/bi";
 import { Link } from "react-router-dom";
 const Box = ({ item }) => {
-
   return (
     <>
       <Link to={"/PruductDetail"} className="cardBox">
-        <div className="bten">
+        <Link to={"/CartDetail"} className="bten">
           <button>Add To Cart</button>
-        </div>
+        </Link>
         <div className="buttons">
           <button>-40%</button>
         </div>
         <div className="likes">
+          <Link to={"/wishlist"} className="like">
+            <FaRegHeart className="likee" />
+          </Link>
           <div className="like">
-            <FaRegHeart />
-          </div>
-          <div className="like">
-            <BiSolidHide />
+            <BiSolidHide className="hideEye" />
           </div>
         </div>
         <div className="image">

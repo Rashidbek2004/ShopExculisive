@@ -1,0 +1,28 @@
+.errorWrite {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.notFound {
+  padding: 50px;
+  text-align: center;
+}
+.notFound h1 {
+  font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.notFound p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.notFound .notBtn button {
+  padding: 13px 50px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+}
